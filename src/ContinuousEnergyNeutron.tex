@@ -974,6 +974,8 @@ The format of this Block is given in \Tableref{tab:GPDBlockOutgoing}. The \XSS\ 
 
 \subsubsection{\textsf{SIGP} Block}\label{sec:SIGPBlock}
 The \Block{SIGP} contains the photon production cross section data. The format of the \Block{SIGP} is given in \Tableref{tab:SIGPBlock}. The cross section data begins at the index specified by the locator, \LOC{A}{i}, given in the \Block{LSIG} (see \Sectionref{sec:LSIGBlock}). The \MT s are defined in the \Block{MTRP} (see \Sectionref{sec:MTRBlock}). All indices to the \XSS\ array are \emph{relative} to \jxs{15}.
+\newpage
+
 \begin{ThreePartTable}
 \begin{BlockTable}{SIGP}
   \jxs{15}+\LOC{A}{1}-1         & \var{MFTYPE}$_{1}$ & Cross section array for reaction \MT$_{1}$ \\
@@ -984,6 +986,7 @@ The \Block{SIGP} contains the photon production cross section data. The format o
 \end{BlockTable}
 \begin{tablenotes}
   \note The number of photon production cross section arrays \var{NMT}=\nxs{6}.
+  \newline
 \end{tablenotes}
 \end{ThreePartTable}
 
